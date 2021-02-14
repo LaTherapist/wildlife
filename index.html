@@ -28,7 +28,7 @@
                     </ul>
                 </nav>
             </header>
-            <section>
+            <main>
                 <div class="content">
                     <h1 class="survival__header">Survival</h1>
                     <p class="survival__text">
@@ -37,9 +37,70 @@
                     </p>
                     <button class="survival__button">Donate</button>
                 </div>
-            </section>
+            </main>
         </div>
     </div>
+    <section class="articles">
+        <div class="content">
+            <h2 class="articles__header">Latest articles</h2>
+            <p class="articles__subheader">Breaking news from the wild</p>
+            <div class="slider__wrapper">
+                <a class="arrow_prev" id="prev">
+                    <img src="./Images/Arrow.svg" alt="left arrow">
+                </a>
+                <div class="slider">
+                    <div class="slider-line">
+                        <article class="card">
+                            <img src="./Images/deer.jpg" alt="deer">
+                            <div class="card__text">
+                                <h4 class="card__header">Deer</h4>
+                                <p class="card__subheader">Naturalist investigation</p>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="./Images/squirrel.jpg" alt="squirrel">
+                            <div class="card__text">
+                                <h4 class="card__header">Squirrel</h4>
+                                <p class="card__subheader">Kamikaze squirrels</p>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="./Images/bird.jpg" alt="bird">
+                            <div class="card__text">
+                                <h4 class="card__header">Bird</h4>
+                                <p class="card__subheader">Birds Fight club</p>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="./Images/wolf.jpg" alt="wolf">
+                            <div class="card__text">
+                                <h4 class="card__header">Wolf</h4>
+                                <p class="card__subheader">Circus wolves</p>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="./Images/bug.jpg" alt="bug">
+                            <div class="card__text">
+                                <h4 class="card__header">Bug</h4>
+                                <p class="card__subheader">Bugs attack!</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <a class="arrow_next" id="next">
+                    <img src="./Images/Arrow.svg" alt="right arrow">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="notification">
+        <h3 class="notification__header">Get notified about new amazing articles</h3>
+        <form class="notification__form">
+            <input class="notification__input" type="text" placeholder="Email">
+            <input class="notification__button" type="submit" value="Send">
+        </form>
+    </section>
+    <script src="index.js"></script>
 </body>
 
 </html>

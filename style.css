@@ -24,7 +24,6 @@
 .header__container {
     padding: 19px 120px 240px; 
     background: url(./Images/foxBG.jpg) 50% 50% / cover no-repeat;
-    filter: drop-shadow(-150px 0px 150px #02160B);
 }
 .header {
     display: flex;
@@ -47,6 +46,9 @@
 .header__nav li:nth-child(3) {
     margin-top: 3px;
 }
+.header__nav li:nth-child(4) {
+    margin-top: 2px;
+}
 .header__button {
     padding: 9px 24px;
     font-family: 'Roboto', sans-serif;
@@ -65,7 +67,7 @@
 /* Survival section */
 
 .survival__header {
-    margin-bottom: 51px;
+    margin-bottom: 52px;
     font-size: 48px;
     line-height: 72px;
     letter-spacing: 2px;
@@ -73,7 +75,7 @@
 }
 .survival__text {
     max-width: 274px;
-    margin-bottom: 51px;
+    margin-bottom: 52px;
     font-size: 18px;
     line-height: 27px;
 }
@@ -84,4 +86,103 @@
     line-height: 27px;
     background: #CD6326;
     border-radius: 5px;
+}
+
+/* Latest articles section */
+
+.articles {
+    padding: 120px 0 235px;
+    background-color: #cccccc
+}
+.articles__header {
+    margin-bottom: 19px;
+    font-size: 48px;
+    line-height: 72px;
+    text-align: center;
+    color: #333333;
+}
+.articles__subheader {
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #666666;
+    margin-bottom: 120px;
+}
+.slider__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.slider {
+    max-width: 1020px;
+    overflow: hidden;
+}
+.slider-line {
+    position: relative;
+    display: flex;
+}
+.card {
+    position: relative;
+    margin-right: 60px;
+}
+.card__text {
+    position: absolute;
+    bottom: 45px;
+    width: 300px;
+    text-align: center;
+}
+.card__header {
+    padding-bottom: 9px;
+    font-size: 22px;
+    line-height: 36px;
+}
+.card__subheader {
+    font-size: 17px;
+    line-height: 27px;
+}
+.arrow_prev {
+    display: flex;
+    align-items: center;
+}
+.arrow_next {
+    display: flex;
+    margin-right: 1px;
+    align-items: center;
+    transform: rotate(180deg);
+}
+
+/* Get notified secion */
+
+.notification {
+    padding-bottom: 239px;
+    background-color: #cccccc;
+}
+.notification__header {
+    margin-bottom: 60px;
+    font-size: 27px;
+    line-height: 40px;
+    text-align: center;
+    color: #333333;
+}
+.notification__form {
+    display: flex;
+    justify-content: center;
+}
+.notification__input {
+    width: 540px;
+    padding-left: 15px;
+    padding-top: 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    line-height: 27px;
+    background-color: #cccccc;
+    border: 1px solid #666666;
+    border-right: 0;
+}
+.notification__button {
+    padding: 17px 35px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    line-height: 27px;
+    background-color: #CD6326;
+    border-radius: 0px 5px 5px 0px;
 }
