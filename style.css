@@ -11,6 +11,9 @@
     list-style-type: none;
     border: 0;
 }
+a {
+    cursor: pointer;
+}
 
 /* Header */
 
@@ -43,17 +46,43 @@
     font-size: 23px;
     line-height: 60px;   
 }
+.header__nav li:nth-child(2) {
+    margin-left: -2px;
+}
 .header__nav li:nth-child(3) {
     margin-top: 3px;
 }
 .header__nav li:nth-child(4) {
     margin-top: 2px;
 }
+.nav-link:hover {
+    padding-bottom: 3px;
+    color: #CD6326;
+    border-bottom: 2px solid #CD6326;
+    transition: all 0.3s ease;
+}
+.nav-link:active {
+    color: #8F5613;
+    border-color: #8F5613;
+}
+.loupe:hover {
+    transform: scale(1.4);
+    transition: transform 0.3s ease;
+}
 .header__button {
-    padding: 9px 24px;
+    padding: 10px 24px 9px;
     font-family: 'Roboto', sans-serif;
     border: 2px solid #CD6326;
     border-radius: 5px;
+    transition: background-color 0.5s ease;
+}
+.header__button:hover {
+    padding: 12px 26px 11px;
+    background-color: #CD6326;
+    border: 0;
+}
+.header__button:active {
+    background-color: #8F5613;
 }
 .logo__text {
     padding-left: 11px;
@@ -62,6 +91,13 @@
     line-height: 60px;
     vertical-align: top;
     text-transform: uppercase;
+    transition: color 0.4s ease;
+}
+.logo__text:hover {
+    color: #CD6326;
+}
+.logo__text:active {
+    color: #8F5613;
 }
 
 /* Survival section */
@@ -75,23 +111,30 @@
 }
 .survival__text {
     max-width: 274px;
-    margin-bottom: 52px;
+    margin-bottom: 51px;
     font-size: 18px;
     line-height: 27px;
 }
 .survival__button {
     padding: 16px 43px 17px;
+    border-radius: 5px;
+}
+.button {
     font-family: 'Roboto', sans-serif;
     font-size: 23px;
     line-height: 27px;
     background: #CD6326;
-    border-radius: 5px;
 }
-
+.button:hover {
+    background-color: #E39128;
+}
+.button:active {
+    background-color: #8F5613;
+}
 /* Latest articles section */
 
 .articles {
-    padding: 120px 0 235px;
+    padding: 121px 0 235px;
     background-color: #cccccc
 }
 .articles__header {
@@ -118,7 +161,9 @@
 }
 .slider-line {
     position: relative;
+    left: 0;
     display: flex;
+    transition: left 0.5s ease;
 }
 .card {
     position: relative;
@@ -148,6 +193,14 @@
     margin-right: 1px;
     align-items: center;
     transform: rotate(180deg);
+}
+.arrow_prev:hover {
+    transform: scale(1.4);
+    transition: transform 0.4 ease;
+}
+.arrow_next:hover {
+    transform: rotate(180deg) scale(1.4);
+    transition: transform 0.4 ease;
 }
 
 /* Get notified secion */
@@ -180,9 +233,70 @@
 }
 .notification__button {
     padding: 17px 35px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 23px;
-    line-height: 27px;
-    background-color: #CD6326;
     border-radius: 0px 5px 5px 0px;
+}
+
+/* Footer */
+
+.footer__wrapper {
+    background-color: #181617;
+}
+.footer__container {
+    padding-top: 151px;
+    padding-bottom: 144px;
+    background: url(./Images/footerBG.jpg) 50% 50% / cover no-repeat;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 480px;
+    margin-left: 10px;
+    font-size: 23px;
+    line-height: 60px;
+}
+.footer__nav li:first-child {
+    margin-left: 4px;
+    margin-right: -3px;
+}
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+    margin-bottom: 5px;
+}
+.social-media a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #F7F7F7;
+    border-radius: 50%;
+}
+.social-media a:hover {
+    background-color: #CD6326;
+    transform: scale(1.2);
+    transition: all 0.2s ease;
+}
+.social-media a:active {
+    background-color: #8F5613;
+}
+.facebook {
+    background: url(./Images/social_media.svg)  no-repeat;
+    background-position: 10px;
+}
+.instagram {
+    background: url(./Images/social_media.svg) no-repeat;
+    background-position: -55px;
+}
+.pinterest {
+    background: url(./Images/social_media.svg) no-repeat;
+    background-position: -122px;
+}
+.telegram {
+    background: url(./Images/social_media.svg) no-repeat;
+    background-position: -188px;
 }
