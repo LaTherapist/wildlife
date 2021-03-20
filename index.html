@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Wildlife</title>
+</head>
+
+<body>
+    <div class="header__wrapper">
+        <div class="layout header__container">
+            <header class="header content">
+                <a href="index.html">
+                    <img class="logo" src="./Images/logo.svg" alt="logo">
+                    <span class="logo__text">wildlife</span>
+                </a>
+                <nav>
+                    <ul class="header__nav">
+                        <li><a class="nav-link" href="/">Blog</a></li>
+                        <li><a class="nav-link" href="/">Contacts</a></li>
+                        <li class="loupe"><a href="/"><img src="./Images/find.svg" alt="loupe logo"></a></li>
+                        <li class="header__button"><a href="/">Sign in</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <div class="content">
+                    <h1 class="survival__header">Survival</h1>
+                    <p class="survival__text">
+                        What this means is that we exist to help protect our environment and do in numbers of ways. You
+                        can save the planet by donation.
+                    </p>
+                    <button class="survival__button button">Donate</button>
+                </div>
+            </main>
+        </div>
+    </div>
+    <section class="articles">
+        <div class="content">
+            <h2 class="articles__header">Latest articles</h2>
+            <p class="articles__subheader">Breaking news from the wild</p>
+            <div class="slider__wrapper">
+                <a class="arrow_prev" id="prev">
+                    <img src="./Images/Arrow.svg" alt="left arrow">
+                </a>
+                <div class="slider">
+                    <div class="slider-line">
+                        <article class="card">
+                            <img src="./Images/deer.jpg" alt="deer">
+                            <div class="card__text">
+                                <h4 class="card__header">Deer</h4>
+                                <p class="card__subheader">Naturalist investigation</p>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="./Images/squirrel.jpg" alt="squirrel">
+                            <div class="card__text">
+                                <h4 class="card__header">Squirrel</h4>
+                                <p class="card__subheader">Kamikaze squirrels</p>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="./Images/bird.jpg" alt="bird">
+                            <div class="card__text">
+                                <h4 class="card__header">Bird</h4>
+                                <p class="card__subheader">Birds Fight club</p>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="./Images/wolf.jpg" alt="wolf">
+                            <div class="card__text">
+                                <h4 class="card__header">Wolf</h4>
+                                <p class="card__subheader">Circus wolves</p>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="./Images/bug.jpg" alt="bug">
+                            <div class="card__text">
+                                <h4 class="card__header">Bug</h4>
+                                <p class="card__subheader">Bugs attack!</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <a class="arrow_next" id="next">
+                    <img src="./Images/Arrow.svg" alt="right arrow">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="notification">
+        <h3 class="notification__header">Get notified about new amazing articles</h3>
+        <form class="notification__form">
+            <input class="notification__input" type="text" placeholder="Email">
+            <input class="notification__button button" type="submit" value="Send">
+        </form>
+    </section>
+    <div class="footer__wrapper">
+        <div class="layout footer__container">
+            <footer class="footer content">
+                <a href="index.html">
+                    <img src="./Images/logo.svg" alt="logo">
+                    <span class="logo__text">wildlife</span>
+                </a>
+                <nav>
+                    <ul class="footer__nav">
+                        <li><a class="nav-link" href="/">Articles</a></li>
+                        <li><a class="nav-link" href="/">About us</a></li>
+                        <li><a class="nav-link" href="/">Learn more</a></li>
+                    </ul>
+                </nav>
+                <ul class="social-media">
+                    <li><a class="facebook" href=""></a></li>
+                    <li><a class="instagram" href=""></a></li>
+                    <li><a class="pinterest" href=""></a></li>
+                    <li><a class="telegram" href=""></a></li>
+                </ul>
+            </footer>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
